@@ -1,0 +1,43 @@
+header {
+  background: linear-gradient(to right, #766880, #9768a4);
+  color: white;
+  padding: 20px 15spx;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  font-style: italic;
+  margin: 0 300px;
+  padding: 100;
+}
+
+}
+body{
+  background-color: rgb(146, 93, 146);
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+main{
+    font-style: oblique;
+    padding: 100px 100px;
+    box-shadow: 5px 5px 10px;
+    margin: 0 200px 0 200px;
+    border-radius: 100px;
+    padding: 25px;
+    padding-left: 50px;
+    
+
+}
+
+nav{
+    text-align: center;
+    background-color: rgb(200, 233, 236);
+    margin: 0 300px;
+    box-shadow: #9768a4;
+
+}
