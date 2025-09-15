@@ -1,26 +1,29 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Software testing</title>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Software testing</title>
+   <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
 
 <header>
-    <article>
-        <h1>Soft Engineering</h1>
+    <article style="background-color: rgb(205, 120, 208)">
+        <h1>Software Engineering</h1>
+        <h1 style="background-color: rgb(235, 120, 217)">Chapter 8</h1>
     </article>
+    
+
     <article>
-        <h1>Chapter 8</h1>
+        <pstyle="background-color:rgb(255, 127, 217)">This chapter covers CSS (Cascading Style Sheets).</p>
     </article>
-        <article>
-    
-        </article>
-    
 </header>
+
+
 <nav>
    <a href="">8.1 Development testing</a>
    <a href=""> 8.2 Test-driven development</a>
@@ -30,13 +33,17 @@
     
 </nav>
 
-        <article>
-         <h3> Objectives</h3>
-            <p> The objective of this chapter is to introduce software testing and
+<main style= background-color:aquamarine>;
+
+         
+      <h3> Objectives</h3>
+
+         
+         <p> The objective of this chapter is to introduce software testing and
              software testing processes. When you have read the chapter, you will:</p>
 
 
-             <ul>
+            <ul>
 
                 <li> The objective of this chapter is to introduce software testing and
              software testing processes. When you have read the chapter, you will:</li>
@@ -51,22 +58,22 @@
              and release testing and be aware of user testing processes and
              techniques.</li>
 
-             </ul>
+            </ul>
 
 
              <h3>Contents</h3>
 
-        <UL>
+            <UL>
              <li> 8.1 Development testing</li>
              <li> 8.2 Test-driven development</li>
              <li> 8.3 Release testing</li>
              <li> 8.4 User testing</li>
-        </UL>
+            </UL>
             
-    <!--SECTION 1-->
-            <H2> 8.1 Development testing </H2>
+    
+         <H2 style="text-align: Center;"> 8.1 Development testing </H2>
 
-             <UL1>
+            <UL1>
 
              <p>Testing is intended to show that a program does what it is intended to do and to dis
              cover program defects before it is put into use. When you test software, you execute
@@ -241,13 +248,13 @@
              specify the expected test results. However, test execution can be automated. The
              expected results are automatically compared with the predicted results so there is no
              need for a person to look for errors and anomalies in the test run.</P>
-<!--  -->
 
-                      <center><img src="image/Image4.png"></center>
 
-                <p><b>Figure 8.3</b> A model of the software testing process Inspections and testing</p>
+               <center><img src="image/Image4.png"></center>
 
-                <P>Typically, a commercial software system has to go through three stages of testing:</P>
+            <p><b>Figure 8.3</b> A model of the software testing process Inspections and testing</p>
+
+               P>Typically, a commercial software system has to go through three stages of testing:</P>
 
                  <P>
                     1. Development testing, where the system is tested during development to discover
@@ -282,9 +289,9 @@
 
     
  
-                    <!--SECTION 8.1--> 
+               
 
-            <H2>8.1 Development testing </H2>
+            <H2 style="text-align: Center;"> 8.1 Development testing </H2>
 
                     <P> Development testing includes all testing activities that are carried out by the team
                  developing the system. The tester of the software is usually the programmer who
@@ -316,11 +323,7 @@
                          is to discover bugs in the software. It is therefore usually interleaved with debugging—
                          the process of locating problems with the code and changing the program to fix these problems</p>
 
-                        
-<!-- 8.1.1 UNIT TESTING -->
-
-
-            <h2> 8.1.1 Unit testing</h2>
+                        <h2>8.1.1 Unit testing</h2>
 
 
                     <p> Unit testing is the process of testing program components, such as methods or object
@@ -394,17 +397,17 @@
                  object can simply return those times, irrespective of the actual clock time</p>
     
 
-<!--8.1.2 Choosing unit test cases-->
+                  <!--8.1.2 Choosing unit test cases-->
 
-            <h2> 8.1.2 Choosing unit test cases</h2>
+            <h2 style="text-align: Center"> 8.1.2 Choosing unit test cases</h2>
 
                <p>Testing is expensive and time consuming, so it is important that you choose effective
              unit test cases. Effectiveness, in this case, means two things:</p>
 
-                    <p>1. The test cases should show that, when used as expected, the component that you
+                  <p>1. The test cases should show that, when used as expected, the component that you
                     are testing does what it is supposed to do.</p>
 
-                    <p> 2. If there are defects in the component, these should be revealed by test cases.</p>
+                  <p> 2. If there are defects in the component, these should be revealed by test cases.</p>
 
                 <p> You should therefore write two kinds of test case. The first of these should reflect
              normal operation of a program and should show that the component works. For
@@ -414,20 +417,24 @@
              testing experience of where common problems arise. It should use abnormal inputs
              to check that these are properly processed and do not crash the component.</p>
 
-                 <p>I discuss two possible strategies here that can be effective in helping you choose test cases. These are:</p>
+               <p>I discuss two possible strategies here that can be effective in helping you choose test cases. These are:</p>
 
-                    <p>  1. Partition testing, where you identify groups of inputs that have common charac
-            t       eristics and should be processed in the same way. You should choose tests from within each of these groups.</p>
+               <ul>
+                   
+                <p>  1. Partition testing, where you identify groups of inputs that have common charac
+                   eristics and should be processed in the same way. You should choose tests from within each of these groups.</p>
 
 
-                    <p> 2. Guideline-based testing, where you use testing guidelines to choose test cases.
+                  <p> 2. Guideline-based testing, where you use testing guidelines to choose test cases.
                      These guidelines reflect previous experience of the kinds of errors that program
                      mers often make when developing components</p>
 
 
                        <center> <img src="image/Image7.png"></center>
-
-                <p> The input data and output results of a program often fall into a number of different classes with common characteristics. 
+               
+               </ul>
+                
+               <p> The input data and output results of a program often fall into a number of different classes with common characteristics. 
              Examples of these classes are positive numbers, negative numbers, and menu selections. Programs normally behave in a
              comparable way for all members of a class. That is, if you test a program that does a
              computation and requires two positive numbers, then you would expect the program
@@ -485,7 +492,10 @@
              covering errors. For example, when you are testing programs with sequences, arrays,
              or lists, guidelines that could help reveal defects include:</p>
 
-                     <p>  1. Test software with sequences that have only a single value. Programmers natu
+                     
+         <ul>
+
+            <p>  1. Test software with sequences that have only a single value. Programmers natu
                  rally think of sequences as made up of several values and sometimes they embed
                  this assumption in their programs. Consequently, if presented with a single
                  value sequence, a program may not work properly.</p>
@@ -497,7 +507,7 @@
                     <p> 3. Derive tests so that the first, middle, and last elements of the sequence are
                  accessed. This approach is reveals problems at partition boundaries</p>
 
-                            <center><img src="image/Image9.png"></center>
+               <center><img src="image/Image9.png"></center>
 
                  <p> Whittaker’s book (2002) includes many examples of guidelines that can be used
                  in test case design. Some of the most general guidelines that he suggests are:</p>
@@ -510,14 +520,15 @@
             <li>Force computation results to be too large or too small.</li>  
         </ul>
 
+         <ul>
                 <p>As you gain experience with testing, you can develop your own guidelines about
              how to choose effective test cases. I give more examples of testing guidelines in the
              next section of this chapter.</p>
 
  
-<!--8.1.3 Component testing< -->
 
-            <h2> 8.1.3 Component testing</h2>
+
+            <h2 Sstyle="text-align: Center"> 8.1.3 Component testing</h2>
 
                  <p>Software components are often composite components that are made up of several
              interacting objects. For example, in the weather station system, the reconfiguration
@@ -559,8 +570,8 @@
 
                  <p> Interface errors are one of the most common forms of error in complex systems
                 (Lutz, 1993). These errors fall into three classes:</p>
-
-     <ul>
+               </ul>
+          <ul>
                 <li> Interface misuse A calling component calls some other component and makes an
              error in the use of its interface. This type of error is common with parameter inter
              faces, where parameters may be of the wrong type or be passed in the wrong
@@ -577,7 +588,7 @@
              the consumer can access out-of-date information because the producer of the
              information has not updated the shared interface information</li>
 
-     </ul>
+         </ul>
 
                 <p>Testing for interface defects is difficult because some interface faults may only
              manifest themselves under unusual conditions. For example, say an object imple
@@ -624,10 +635,10 @@
              of interface errors</p>
 
 
-<!-- 8.1.4 System testing< -->
 
 
-            <h2> 8.1.4 System testing</h2>
+
+            <h2 style="text-align: Center;"> 8.1.4 System testing</h2>
 
                 <p> System testing during development involves integrating components to create a version of 
              the system and then testing the integrated system. System testing checks that
@@ -737,13 +748,11 @@
              its credibility without necessarily being able to create it in advance.</p>
 
 
-  
-    <!--SECTION 2 < -->
 
 
-                  <h2> 8.2 Test-driven development</h2>
+            <h2 style="text-align: Center;"></h2style> 8.2 Test-driven development</h2>
 
-                     <p> Test-driven development (TDD) is an approach to program development in which
+               <p> Test-driven development (TDD) is an approach to program development in which
                  you interleave testing and code development (Beck, 2002; Jeffries and Melnik,2007).
                  Essentially, you develop the code incrementally, along with a test for that increment.
                  You don’t move on to the next increment until the code that you have
@@ -759,21 +768,21 @@
                  are as follows:</p>
 
             
-                         <p> 1. You start by identifying the increment of functionality that is required. This
+                     <p> 1. You start by identifying the increment of functionality that is required. This
                      should normally be small and implementable in a few lines of code</p>
 
-                         <p> 2. You write a test for this functionality and implement this as an automated test.
+                     <p> 2. You write a test for this functionality and implement this as an automated test.
                      This means that the test can be executed and will report whether or not it has
                      passed or failed.</p>
 
-                         <p>3. You then run the test, along with all other tests that have been implemented.
+                     <p>3. You then run the test, along with all other tests that have been implemented.
                      Initially, you have not implemented the functionality so the new test will fail.
                      This is deliberate as it shows that the test adds something to the test set.</p>
 
-                        <p> 4. You then implement the functionality and re-run the test. This may involve
+                     <p> 4. You then implement the functionality and re-run the test. This may involve
                      refactoring existing code to improve it and add new code to what’s already there.</p>
 
-                        <p> 5. Once all tests run successfully, you move on to implementing the next chunk of
+                     <p> 5. Once all tests run successfully, you move on to implementing the next chunk of
                      functionality</p>
             
 
@@ -812,106 +821,101 @@
                      in test-driven development (Martin, 2007).</p>
 
                         <p> 4. System documentation The tests themselves act as a form of documentation that
- describe what the code should be doing. Reading the tests can make it easier to
+                      describe what the code should be doing. Reading the tests can make it easier to
                      understand the code</p>
 
                 
 
-                     <p> One of the most important benefits of test-driven development is that it reduces
-                 the costs of regression testing. Regression testing involves running test sets that have
-                 successfully executed after changes have been made to a system. The regression test
-                 checks that these changes have not introduced new bugs into the system and that the
-                 new code interacts as expected with the existing code. Regression testing is very
-                 expensive and often impractical when a system is manually tested, as the costs in
-                 time and effort are very high. In such situations, you have to try and choose the most
-                 relevant tests to re-run and it is easy to miss important tests.</p>
+                  <p> One of the most important benefits of test-driven development is that it reduces
+                   the costs of regression testing. Regression testing involves running test sets that have
+                   successfully executed after changes have been made to a system. The regression test
+                   checks that these changes have not introduced new bugs into the system and that the
+                   new code interacts as expected with the existing code. Regression testing is very
+                   expensive and often impractical when a system is manually tested, as the costs in
+                   time and effort are very high. In such situations, you have to try and choose the most
+                   relevant tests to re-run and it is easy to miss important tests.</p>
 
-                     <p> However, automated testing, which is fundamental to test-first development, dra
-                 matically reduces the costs of regression testing. Existing tests may be re-run
-                 quickly and cheaply. After making a change to a system in test-first development, all
-                 existing tests must run successfully before any further functionality is added. As a
-                 programmer, you can be confident that the new functionality that you have added has
-                 not caused or revealed problems with existing code.</p>
+                  <p> However, automated testing, which is fundamental to test-first development, dra
+                    matically reduces the costs of regression testing. Existing tests may be re-run
+                   quickly and cheaply. After making a change to a system in test-first development, all
+                   existing tests must run successfully before any further functionality is added. As a
+                   programmer, you can be confident that the new functionality that you have added has
+                   not caused or revealed problems with existing code.</p>
 
-                     <p>Test-driven development is of most use in new software development where the
-                 functionality is either implemented in new code or by using well-tested standard
-                 libraries. If you are reusing large code components or legacy systems then you need
+                  <p>Test-driven development is of most use in new software development where the
+                    functionality is either implemented in new code or by using well-tested standard
+                    libraries. If you are reusing large code components or legacy systems then you need
                  to write tests for these systems as a whole. Test-driven development may also be
                  ineffective with multi-threaded systems. The different threads may be interleaved at
                  different times in different test runs, and so may produce different results.</p>
 
 
-                      <P> If you use test-driven development, you still need a system testing process to validate
+               <P> If you use test-driven development, you still need a system testing process to validate
                  the system; that is, to check that it meets the requirements of all of the system
                  stakeholders. System testing also tests performance, reliability, and checks that the
                  system does not do things that it shouldn’t do, such as produce unwanted outputs,
                  etc. Andrea (2007) suggests how testing tools can be extended to integrate some
                  aspects of system testing with TDD.</P>
 
-                     <P> Test-driven development has proved to be a successful approach for small and
+               <P> Test-driven development has proved to be a successful approach for small and
                  medium-sized projects. Generally, programmers who have adopted this approach are
                  happy with it and find it a more productive way to develop software (Jeffries and Melnik, 2007). In some trials, it has been shown to lead to improved code quality; in
                  others, the results have been inconclusive. However, there is no evidence that TDD
                  leads to poorer quality code</P>
 
 
-    <!--SECTION 3 < -->
-
-
-                 <h2>  8.3 Release testing</h2>
+    
+               <h2 style="text-align: Center;">8.3 Release testing</h2>
                         
-                        <p> Release testing is the process of testing a particular release of a system that is
+               <p> Release testing is the process of testing a particular release of a system that is
                  intended for use outside of the development team. Normally, the system release is for
                  customers and users. In a complex project, however, the release could be for other
                  teams that are developing related systems. For software products, the release could
                  be for product management who then prepare it for sale.</p>
 
-                        <p> There are two important distinctions between release testing and system testing
+               <p> There are two important distinctions between release testing and system testing
                  during the development process:</p>
-
+               
                 
-                            <p>  1. A separate team that has not been involved in the system development should be
-                         responsible for release testing.</ul>
+               <p> 1.A separate team that has not been involved in the system development should be
+                  responsible for release testing.</ul>
 
-                               <p> 2. System testing by the development team should focus on discovering bugs in the
-                         system (defect testing). The objective of release testing is to check that the system
-                         meets its requirements and is good enough for external use (validation testing).</p>
+               <p> 2. System testing by the development team should focus on discovering bugs in the
+                  system (defect testing). The objective of release testing is to check that the system
+                  meets its requirements and is good enough for external use (validation testing).</p>
                  
 
-                        <p>Release testing is usually a black-box testing process where tests are derived from
+               <p>Release testing is usually a black-box testing process where tests are derived from
                  the system specification. The system is treated as a black box whose behavior can
                  only be determined by studying its inputs and the related outputs. Another name for
                  this is ‘functional testing’, so-called because the tester is only concerned with functionality and
                  not the implementation of the software</p>
 
 
-
- <!-- 8.3.1 Requirements-based testing< -->
-
-                 <h2> 8.3.1 Requirements-based testing</h2>
+               <h2 style="text-align: Center;"> 8.3.1 Requirements-based testing</h2>
                             
-                        <p> A general principle of good requirements engineering practice is that requirements
-                 should be testable; that is, the requirement should be written so that a test can be
-                 designed for that requirement. A tester can then check that the requirement has been
-                 satisfied. Requirements-based testing, therefore, is a systematic approach to test case
-                 design where you consider each requirement and derive a set of tests for it.
-                 Requirements-based testing is validation rather than defect testing—you are trying
-                 to demonstrate that the system has properly implemented its requirements</p>
+                  <p> A general principle of good requirements engineering practice is that requirements
+                     should be testable; that is, the requirement should be written so that a test can be
+                     designed for that requirement. A tester can then check that the requirement has been
+                     satisfied. Requirements-based testing, therefore, is a systematic approach to test case
+                     design where you consider each requirement and derive a set of tests for it.
+                     Requirements-based testing is validation rather than defect testing—you are trying
+                     to demonstrate that the system has properly implemented its requirements</p>
                             
-                        <p> For example, consider related requirements for the MHC-PMS (introduced in
-                 Chapter 1), which are concerned with checking for drug allergies:</p>
+                  <p> For example, consider related requirements for the MHC-PMS (introduced in
+                   Chapter 1), which are concerned with checking for drug allergies:</p>
 
-                        <p> If a patient is known to be allergic to any particular medication, then prescription 
-                 of that medication shall result in a warning message being issued to thesystem user.</p>
+                    <p> If a patient is known to be allergic to any particular medication, then prescription 
+                  of that medication shall result in a warning message being issued to thesystem user.</p>
 
-                        <p> If a prescriber chooses to ignore an allergy warning, they shall provide a
-                 reason why this has been ignored.</p>
+                    <p> If a prescriber chooses to ignore an allergy warning, they shall provide a
+                   reason why this has been ignored.</p>
 
-                        <p>To check if these requirements have been satisfied, you may need to develop several related tests</p>
+                   <p>To check if these requirements have been satisfied, you may need to develop several related tests</p>
 
                 
 
-                            <p> 1. Set up a patient record with no known allergies. Prescribe medication for allergies
+                  <p> 1. Set up a patient record with no known allergies. Prescribe medication for allergies
                          that are known to exist. Check that a warning message is not issued by the system.</p>
 
                                 <p> 2. Set up a patient record with a known allergy. Prescribe the medication to that the
@@ -933,22 +937,20 @@
                          You should also maintain traceability records of your requirements based testing, 
                          which link the tests to the specific requirements that are being tested.</p>
 
-                         
+                        
 
-<!-- 8.3.2 Scenario testing< -->
-
-                 <h2>  8.3.2 Scenario testing</h2>
+                        <h2 style="text-align: Center;"> 8.3.2 Scenario testing</h2>
 
                          <P>Scenario testing is an approach to release testing where you devise typical scenarios
-                     of use and use these to develop test cases for the system. A scenario is a story that
-                     describes one way in which the system might be used. Scenarios should be realistic
-                     and real system users should be able to relate to them. If you have used scenarios as
-                     part of the requirements engineering process (described in Chapter 4), then you may
-                     be able to reuse these as testing scenarios.</P>
+                         of use and use these to develop test cases for the system. A scenario is a story that
+                         describes one way in which the system might be used. Scenarios should be realistic
+                         and real system users should be able to relate to them. If you have used scenarios as
+                         part of the requirements engineering process (described in Chapter 4), then you may
+                         be able to reuse these as testing scenarios.</P>
 
                          <P>In a short paper on scenario testing, Kaner (2003) suggests that a scenario test
-                     should be a narrative story that is credible and fairly complex. It should motivate
-                     stakeholders; that is, they should relate to the scenario and believe that it is important</P>
+                         should be a narrative story that is credible and fairly complex. It should motivate
+                         stakeholders; that is, they should relate to the scenario and believe that it is important</P>
 
                             <center><img src="image/Image13.png"></center>
 
@@ -989,10 +991,10 @@
                      you are also checking that combinations of requirements do not cause problems.</P>
 
                
- <!--  8.3.3 Performance testing< -->
+ 
 
                     
-                    <h2>  8.3.3 Performance testing</h2>
+                  <h2 style="text-align: Center;"> 8.3.3 Performance testing</h2>
 
                         <P> Once a system has been completely integrated, it is possible to test for emergent properties, 
                  such as performance and reliability. Performance tests have to be designed to
@@ -1041,11 +1043,11 @@
                  beyond this point.</P>
 
 
-    <!--SECTION 3 < -->
+   
 
-                     <H2> 8.4 User testing</H2>
+               <H2 style="text-align: Center;"> 8.4 User testing</H2>
                             
-                          <P>User or customer testing is a stage in the testing process in which users or customers
+                  <P>User or customer testing is a stage in the testing process in which users or customers
                  provide input and advice on system testing. This may involve formally testing a system 
                  that has been commissioned from an external supplier, or could be an informal
                  process where users experiment with a new software product to see if they like it and
@@ -1185,7 +1187,7 @@
 
                      <H2> KEY POINTS</H2>
 
-            <ul>
+                  <ul>
                         <li> Testing can only show the presence of errors in a program. It cannot demonstrate that there are no remaining faults.</li>
 
                         <li> Development testing is the responsibility of the software development team. A separate team should be responsible for testing 
@@ -1212,12 +1214,12 @@
                          <li> Acceptance testing is a user testing process where the aim is to decide if the software is good
                      enough to be deployed and used in its operational environment.</li>
 
-             </ul>
+                   </ul>
 
 
-                      <H2> FURTHER READING</H2>
+                  <H2> FURTHER READING</H2>
 
-                
+                     <ul>
                         <p> ‘How to design practical test cases’. A how-to article on test case design by an author from a
                      Japanese company that has a very good reputation for delivering software with very few faults. 
                      (T. Yamaura, IEEE Software, 15(6), November 1998.) http://dx.doi.org/10.1109/52.730835.</p>
@@ -1232,17 +1234,19 @@
 
                      <p> ‘Test-driven development’. This special issue on test-driven development includes a good general overview of TDD as well as experience papers on how TDD has been used for different types of
                      software. (IEEE Software, 24 (3) May/June 2007.)</p>
+                  </ul>
 
+</main>
 
 <!--THIS IS FOOTER-->
-<footer>
+   <footer style= background-color:aquamarine>;
     <article>
-        <h1>Software Engineering</h1>
+        <h1 style= background-color:aquamarine>Software Engineering</h1>
         <p>@RICHELLE ANN ROXAS</p>
     </article>
 
     <nav>
-        <h5>EXERCISES</h5>
+        <h5 style= background-color:brown>EXERCISES</h5>
 
         <a href=""> 8.1. Explain why it is not necessary for a program to be completely free of defects before it is
      delivered to its customers.</a>
@@ -1275,7 +1279,7 @@
      for systems that are delivered to external customers.</a>
 
 
-      <h5>REFERENCES</h5>
+      <h5 style= background-color:brown>REFERENCES</h5>
 
       <a href="">Andrea, J. (2007). ‘Envisioning the Next Generation of Functional Testing Tools’. IEEE Software, 24 (3), 58–65.</a>
 
@@ -1289,14 +1293,14 @@
 
       <a href="">Cusamano, M. and Selby, R. W. (1998). Microsoft Secrets. New York: Simon and Shuster.</a>
 
-
+   </footer>
 
     </nav>
 
 
 </footer>
    
-</body>
+
 </html>
 
 
