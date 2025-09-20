@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="chapter1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <!--  -->
+
   <body>
     <header class="header">
       <article>
-        <h1 style="color: white">Software Engineering</h1>
+        <h1 style="color: white" id="top">Software Engineering</h1>
       </article>
       <article>
         <h1 id="chapter1" style="color: white">Chapter 1</h1>
       </article>
     </header>
     <nav class="nav">
-      <a href="">Professional Software Development</a>
-      <a href="">Software Engineering Ethics</a>
-      <a href="">Case Studies</a>
+      <a href="#1">Professional Software Development</a>
+      <a href="#2">Software Engineering Ethics</a>
+      <a href="#3">Case Studies</a>
     </nav>
     <main>
       <section class="f-page">
-        <article class="">
+        <article class="top">
           <h1 id="intro">Introduction</h1>
           <div class="obj">
             <h2>Objective</h2>
@@ -122,7 +128,7 @@
         </article>
       </section>
       <section>
-        <h2>Professional software development</h2>
+        <h2 id="1">Professional software development</h2>
         <article>
           <p>
             Lots of people write programs. People in business write spreadsheet
@@ -647,7 +653,7 @@
         </article>
       </section>
       <section>
-        <h2>Software engineering ethics</h2>
+        <h2 id="2">Software engineering ethics</h2>
         <article>
           <p>
             Like other engineering disciplines, software engineering is carried
@@ -820,7 +826,7 @@
         </article>
       </section>
       <section>
-        <h2>Case studies</h2>
+        <h2 id="3">Case studies</h2>
         <article>
           <p>
             To illustrate software engineering concepts, I use examples from
@@ -1236,9 +1242,10 @@
       <nav class="footer2">
         <h5 id="content">Contents</h5>
         <div class="a2">
-          <a href="">Professional Software Development</a>
-          <a href="">Software Engineering Ethics</a>
-          <a href="">Case Studies</a>
+          <a href="#1">Professional Software Development</a>
+          <a href="#2">Software Engineering Ethics</a>
+          <a href="#3">Case Studies</a>
+          <a href="#intro">Back to top</a>
         </div>
       </nav>
     </footer>
