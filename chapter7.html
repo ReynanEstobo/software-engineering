@@ -15,17 +15,18 @@
         <h1>Chapter 7</h1>
       </article>
     </header>
-    <nav>
-      <a href="">7.1 Object-oriented design using the UML</a>
-      <a href="">7.2 Design patterns</a>
-      <a href="">7.3 Implementation issues</a>
-      <a href="">7.4 Open source development</a>
+    <nav class="nav1">
+      <button><a href="">7.1 Object-oriented design using the UML</a></button>
+      <button><a href="">7.2 Design patterns</a></button>
+      <button><a href="">7.3 Implementation issues</a></button>
+      <button><a href="">7.4 Open source development</a></button>
+      
     </nav>
     <main>
       <section>
         <h1>DESIGN IMPLEMENTATION</h1>
-
-        <article>
+      <section>
+            <article>
           <p>
             Software design and implementation is the stage in the software
             engineering process at which an executable software system is
@@ -109,6 +110,11 @@
             using the UML rather than in a programming language such as Java or
             Python.
           </p>
+          </article>
+      </section>
+      
+
+          <article>
           <h3>7.1 Object-oriented design using the UML</h3>
           <p>
             An object-oriented system is made up of interacting objects that
@@ -159,7 +165,7 @@
             transfers this to a weather information system, using a satellite
             link.
           </p>
-
+          </article>
           <h3>7.1.1 System context and interactions</h3>
           <p>
             The first stage in any software design process is to develop an
@@ -234,6 +240,7 @@
             use a standard format for this description that clearly identifies
             what information is exchanged, how the interaction is initiated, and
           </p>
+          <figure>
           <img
             src="https://cs.ccsu.edu/~stan/classes/CS410/Notes16/images/07-context_model.png"
             alt=""
@@ -246,6 +253,7 @@
               height="300px"
             />
           </article>
+          </figure>
           <p>
             so on. This is shown in Figure 7.3, which describes the Report
             weather use case from Figure 7.2. Examples of some other use cases
@@ -264,10 +272,10 @@
             <img src="Pictures/pic.png.png" alt="" />
           </figure>
 
-          <img
+          <figure>          <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi7a_T1yaeFl9UZf2mU5Kshq4PLM9m8MJBIw&ss"
             alt=""
-          />
+          /></figure>
 
           <p>
             You identify the major components that make up the system and their
@@ -316,12 +324,10 @@
             object representing the summary of the weather data. You also
             usually need a high-level
           </p>
-
-          <img
+            <figure>  <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDer3GU5vZlNTa9XYlLco3cBEUkQf8fBVHQ&s"
             alt=""
-          />
-
+          /></figure>
           <p>
             system object or objects that encapsulate the system interactions
             defined in the use cases. With these objects in mind, you can start
@@ -380,11 +386,14 @@
               the weather station with its environment. Its operations reflect
               the interactions shown in
             </li>
-
+            <figure>
             <img
               src="https://d2vlcm61l7u1fs.cloudfront.net/media%2F771%2F77158d1e-f968-4378-b5b2-d9c3e0bdaff5%2FphpVV9v4I.png"
-              alt=""
+              height="400px"
+              width="600x"
             />
+            </figure>
+           
 
             <p></p>
 
@@ -497,11 +506,12 @@
               class diagram with each subsystem shown as a package with enclosed
               objects. Subsystem models are static (structural) models.
             </li>
-
-            <img
+              <figure> <img
               src="https://image1.slideserve.com/2401032/figure-7-7-sequence-diagram-describing-data-collection-l.jpg"
-              alt=""
-            />
+            height="400px"
+            width="600px"
+            /></figure>
+           
             <li>
               . Sequence models, which show the sequence of object interactions.
               These are represented using a UML sequence or a collaboration
@@ -615,11 +625,13 @@
               to a Transmitting state where the information is transmitted to
               the remote system. It then returns to the Running state.
             </li>
-
+            <figure>
             <img
               src="https://image1.slideserve.com/2401032/figure-7-8-weather-station-state-diagram-l.jpg"
-              alt=""
+              height="400px"
+              width="500px"
             />
+            </figure>
             <li>
               If a reportStatus() message is received, the system moves to the
               Testing state, then the Transmitting state, before returning to
@@ -658,11 +670,13 @@
             interface to an object or to a group of objects. This means defining
             the signatures and semantics of
           </p>
-
+          </figure>
           <img
             src="https://image1.slideserve.com/2401032/figure-7-9-weather-station-interfaces-l.jpg"
-            alt=""
+            height="400px"
+            height="600"
           />
+          </figure>
           <p>
             the services that are provided by the object or by a group of
             objects. Interfaces can be specified in the UML using the same
@@ -1426,7 +1440,7 @@
         <h1>software engineering</h1>
         <p>© 2025 Emman Decastro</p>
       </article>
-      <nav>
+      <nav class="nav2">
         <h5>Contents</h5>
         <a href="">7.1 Object-oriented design using the UML</a>
         <a href="">7.2 Design patterns</a>
